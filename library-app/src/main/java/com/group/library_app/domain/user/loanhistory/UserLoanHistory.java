@@ -11,7 +11,6 @@ public class UserLoanHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @ManyToOne
-    @JoinColumn(name = "user_id")
     private User user; //N대1 관계
     private String bookName;
     private boolean isReturn;
